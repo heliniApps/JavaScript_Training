@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Colored Boxes</title>
+        <style>
+            h1 {
+                font-size: 4.6rem;
+            }
+
+            code {
+                font-size: 120%;
+            }
+
+            body {
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .title {
+                grid-column: span 2;
+                text-align: center;
+            }
+
+            .shapes {
+                display: grid;
+                gap: 2rem;
+                max-width: 60rem;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .circles {
+                display: grid;
+                gap: 2rem;
+                max-width: 60rem;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .circles div {
+                border-radius: 50%;
+                padding: 4rem;
+                font-size: 1.6rem;
+                text-align: center;
+                color: white;
+            }
+
+            .circles .left {
+                width: 150px;
+                height: 150px;
+                background-color: darkturquoise;
+            }
+
+            .circles .right {
+                width: 250px;
+                height: 150px;
+                background-color: bisque;
+            }
+
+            .boxes div {
+                box-sizing: border-box;
+                width: 100%;
+                padding: 4rem;
+                font-size: 1.6rem;
+                text-align: center;
+                color: white;
+                background-color: blueviolet;
+            }
+        </style>
+        <script src="./circleScript.js" defer></script>
+    </head>
+    <body>
+        <main class="shapes">
+            <h1 class="title">Tweaking to combine various shapes!</h1>
+            <div class="circles">
+                <div class="left">color: <code class="color-value">turquoise</code></div>
+                <div class="right">color: <code class="color-value">bisque</code></div>
+            </div>
+            <div class="boxes">
+                <div class="left">color: <code class="color-value">blueviolet</code></div>
+            </div>
+        </main>
+    </body>
+</html>
