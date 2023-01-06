@@ -7,7 +7,7 @@
 const mugObj = {
     bodyShape: "uniform cylinder",
     handleShape: "half-moon",
-    meterial: "ceramic",
+    material: "ceramic",
     volume: 250.5,
     design: {
         color: {
