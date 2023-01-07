@@ -11,7 +11,7 @@ const markup = (mugObj) => {
             <li>Shape: ${mugObj.bodyShape}</li>
             <li>Handle Shape: ${mugObj.handleShape}</li>
             <li>Material: ${mugObj.material}</li>
-            <li>Volume: ${mugObj.volume} ml</li>
+            <li>Volume: <span>${mugObj.volume} ml<span></li>
             <li>Design: </li>
             ${
                 mugObj.design.isPrinted
