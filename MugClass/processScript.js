@@ -17,9 +17,12 @@ const mugObj = new Mug(
     true
 );
 
-const main = document.createElement("main");
-main.innerHTML = markup(mugObj);
-document.body.appendChild(main);
+function populateMainElement() {
+    const main = document.createElement("main");
+    main.innerHTML = markup(mugObj);
+    document.body.appendChild(main);
+}
+populateMainElement();
 
 applyColor(mugObj);
 
@@ -28,3 +31,24 @@ applyColor(mugObj);
 
 // mugObj.changeContents("Food", "Ice-Cream", false);
 // updateMug(mugObj);
+
+function testStyleClassesAndAttributes() {
+    let spanQuery = document.querySelector("main li span");
+    if (spanQuery === null) {
+        return;
+    }
+    let spanClassList = spanQuery.classList;
+    console.log("spanClassList:", spanClassList);
+
+    if (spanClassList.length <= 0) {
+        spanQuery.classList.add("volume-span-style");
+    }
+
+    let lastChildQuery = document.querySelector("main li:last-child");
+    console.log("lastChildQuery:", lastChildQuery);
+
+    if (lastChildQuery !== null) {
+        lastChildQuery.setAttribute("data-mug-detail", "lastElement");
+    }
+}
+testStyleClassesAndAttributes();
