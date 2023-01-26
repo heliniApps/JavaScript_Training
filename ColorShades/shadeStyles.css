@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.row-div {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    align-items: center;
+    justify-content: center;
+}
+
+.colored-box {
+    height: 5rem;
+    width: 5rem;
+    padding: 0.1rem 0.1rem 0.1rem;
+    border-radius: 1rem;
+}
+
+.active-canvas {
+    background-color: #870074;
+}
+
+.h1-color {
+    color: #7f38ec;
+}

@@ -46,3 +46,12 @@ console.log("removed Items: ", removedItems);
 let mugItemIndex = stringArrCopy.indexOf("mug");
 let removedMugItem = stringArrCopy.splice(mugItemIndex, 1);
 console.log("Removed Mug Item:", removedMugItem);
+
+// Capitalize the first letter of the item and map to the existing Array.
+const capitalizeFirstLetter = (item) => {
+    item = item.charAt(0).toUpperCase() + item.substring(1, item.length);
+    return item;
+};
+let mappedStrArr = stringArray.map(capitalizeFirstLetter);
+
+console.log("mappedStrArr:", mappedStrArr);
