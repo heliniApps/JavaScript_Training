@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    padding: 2rem 4rem;
+    background-color: cornsilk;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.generic-button {
+    padding: 1rem 2rem;
+    border: 3px solid black;
+    border-radius: 0.5rem;
+    font-size: 1.8rem;
+    background-color: floralwhite;
+    flex: 0 1 auto;
+    cursor: pointer;
+}
+
+.generic-button.active {
+    background-color: mediumvioletred;
+    color: floralwhite;
+    border-color: darkred;
+}
+
+.cursor-position {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.blue {
+    background-color: rgb(164, 130, 223);
+}
+
+.grey {
+    background-color: gainsboro;
+}
